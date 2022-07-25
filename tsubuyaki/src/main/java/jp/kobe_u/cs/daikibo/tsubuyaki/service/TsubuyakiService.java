@@ -35,4 +35,11 @@ public class TsubuyakiService {
         return list;
     }
 
+    //検索ワードからつぶやきを部分文字列検索
+    public List<Tsubuyaki> queryTsubuyakiByComment(String comment){
+        return repo.findByCommentContaining(comment);
+
+    }
+
+
 }

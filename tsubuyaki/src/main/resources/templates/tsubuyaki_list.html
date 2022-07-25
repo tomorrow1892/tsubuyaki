@@ -20,7 +20,13 @@
 
   
     <h1>みんなのつぶやき</h1>
-
+    <p>つぶやき検索</p>
+    <form role="form" th:action="@{/read}"  method="get">
+        <p>
+            <input type="text" name = "comment"> 
+            <input type="submit" value="検索" />
+        </p>
+    </form>
   
     <ul>
 
